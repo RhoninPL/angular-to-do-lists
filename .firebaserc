@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "angular-pwa-38ba5",
+    "test": "test-restaurant-713d8"
+  }
+}

@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+ul {
+  background: #EEE;
+  border-radius: 5px;
+
+  li {
+    line-height: 40px;
+  }
+
+  i {
+    vertical-align: text-bottom;
+  }
+
+  button {
+    .check {
+      color: #1dc447;
+    }
+
+    .delete {
+      color: #ed3636;
+    }
+  }
+}

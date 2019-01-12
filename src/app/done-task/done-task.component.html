@@ -1,0 +1,9 @@
+<div class="container">
+<p> Wykonane zadania: {{tasksDone.length}}</p>
+<ul>
+  <li appChecked *ngFor="let task of tasksDone">
+    {{task.name}}
+    <button type="button" class="btn btn-link" (click)="remove(task)"><i class="material-icons delete">delete</i></button>
+  </li>
+</ul>
+</div>

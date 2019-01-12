@@ -1,0 +1,12 @@
+<div class="content">
+  <app-to-do-lists></app-to-do-lists>
+  <form [formGroup]="taskForm" (ngSubmit)="save()">
+    <div class="form-group">
+      <label for="newTask">Nowe zadanie:</label>
+      <input type="text" class="form-control" id="newTask" formControlName="newTask" placeholder="Wpisz nazwę zadania...">
+    </div>
+    <button type="submit" class="btn btn-primary">Dodaj</button>
+  </form>
+  <app-todo-task></app-todo-task>
+  <app-done-task></app-done-task>
+</div>

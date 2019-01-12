@@ -1,0 +1,30 @@
+.to-do-list {
+  margin-bottom: 10px;
+  button {
+    margin-right: 10px;
+  }
+
+  button.taskListTitle {
+    background-color: #FFF;
+    border-radius: 5px;
+    padding: 2px 15px;
+    font-size: 14px;
+    line-height: 50px;
+    margin: 10px 0;
+    height: 50px;
+    color: #232323;
+    border: 1px solid #007bff;
+    display: block;
+    width: 100%;
+
+    &.selected {
+      border: 1px solid #232323
+    }
+  }
+
+  span {
+    width: 100px;
+    margin: auto;
+    display: block;
+  }
+}

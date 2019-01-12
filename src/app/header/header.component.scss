@@ -1,0 +1,121 @@
+#restaurant-header {
+  padding-bottom: 30px;
+}
+
+#restaurant-header .content {
+  padding-top: 246px;
+}
+
+#restaurant-header header {
+  box-shadow: rgba(0, 0, 0, .2) 0px 2px 2px;
+}
+
+.material-icons#close {
+  color: white;
+  text-shadow: #000 1px 1px 2px;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  height: 50px;
+  width: 100%;
+}
+
+#restaurant-header > header > .content {
+  width: 100%;
+  clear: both;
+}
+
+.fab-container {
+  height: 0px;
+}
+
+.max_width_600 {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#restaurant-header .info {
+  height: 76px;
+}
+
+#restaurant-header .mdc-layout-grid {
+  --mdc-layout-grid-margin-desktop: 0px 10px 0px 10px;
+  --mdc-layout-grid-margin-tablet: 0px 10px 0px 10px;
+  --mdc-layout-grid-margin-phone: 0px 10px 0px 10px;
+
+  --mdc-layout-grid-gutter-desktop: 0px;
+  --mdc-layout-grid-gutter-tablet: 0px;
+  --mdc-layout-grid-gutter-phone: 0px;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+50,000000+99&0+50,1+100 */
+  background: -moz-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(0, 0, 0, 0.98) 99%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(0, 0, 0, 0.98) 99%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(0, 0, 0, 0.98) 99%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  // filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#000000', GradientType=0);
+  /* IE6-9 */
+}
+
+#restaurant-header .details {
+  color: white;
+  font-size: 14px;
+}
+
+#restaurant-header h2 {
+  font-size: 22px;
+  color: white;
+  margin: 0px;
+  display: inline;
+}
+
+#restaurant-header .price {
+  color: white;
+  position: relative;
+  left: 5px;
+  top: -1px;
+}
+
+#restaurant-header #rating {
+  padding-top: 4px;
+}
+
+#restaurant-header #rating .material-icons {
+  color: white;
+  font-size: 20px;
+  position: relative;
+  top: 0px;
+  font-size: 18px;
+}
+
+#restaurant-header .fab {
+  min-width: 0px;
+  box-shadow: rgba(0, 0, 0, 0.2) 3px 3px 2px;
+  border-radius: 100%;
+  margin-top: 4px;
+  display: block;
+  width: 0px;
+  height: 0px;
+  padding: 25px;
+  position: relative;
+  top: -20px;
+  background-color: #F4B400 !important;
+  color: white;
+}

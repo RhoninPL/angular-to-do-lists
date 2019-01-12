@@ -1,0 +1,58 @@
+<div class="to-do-list">
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#chooseList">
+    Wybierz listę
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#createNewList">
+    Dodaj listę
+  </button>
+  <span class="text-info">Wybrana lista: {{defaultTaskList.name}}</span>
+</div>
+
+<div class="modal fade" id="chooseList" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body to-do-list">
+        <button type="button" (click)="change(taskList)" *ngFor="let taskList of taskLists" [ngClass]="{'selected': taskList.selected, 'taskListTitle': true}">
+          {{taskList.name}}
+        </button>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="createNewList" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <form [formGroup]="listForm" (ngSubmit)="save()">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+          <div class="form-group">
+            <label for="name">Nowe zadanie:</label>
+            <input type="text" class="form-control" id="name" formControlName="name" placeholder="Wpisz nazwę listy...">
+          </div>
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button class="btn btn-primary" type="submit">Save changes</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
